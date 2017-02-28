@@ -39,8 +39,25 @@ function toggleColor() {
 }
 document.getElementById("add-color").addEventListener("click", toggleColor);
 
+//When you click the "Hulkify" button,
+//the guinea-pig element's font size should become much larger.
+function toggleSize() {
+  guineaPig.classList.toggle("makeBigger");
+}
+document.getElementById("make-large").addEventListener("click", toggleSize);
 
+//When you click the "Capture it" button,
+//the guinea-pig element should have a border added to it
+function toggleBorder() {
+  guineaPig.classList.toggle("addBorder");
+}
+document.getElementById("add-border").addEventListener("click", toggleBorder);
 
-
+//When you click the "Rounded" button,
+//the guinea-pig element's border should become rounded
+function toggleBorderRadius() {
+  guineaPig.classList.toggle("makeRound");
+}
+document.getElementById("add-rounding").addEventListener("click", toggleBorderRadius);
 
 
